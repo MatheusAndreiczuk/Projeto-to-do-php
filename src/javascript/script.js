@@ -14,4 +14,26 @@ $(document).ready(function () {
             $(this).removeClass('done');
         }
     });
+
+    $('.checkbox-task').on('change', function () {
+        const id = $(this).data('task-id');
+        const completed = $(this).is(':checked') ? 'true' : 'false';
+
+        $.ajax({
+            url: '../../database/actions/update_progress.php',
+            method: 'POST',
+            data: { id: id, completed: completed },
+            dataType: 'json',
+            success: function (response) {
+                if (response.success) {
+                    alert('Deu boa.');
+                } else {
+                    alert('Erro ao editar a tarefa.');
+                }
+            },
+            error: function () {
+                alert('Erro ao editar a tarefa v2.');
+            }
+        });
+    });
 });
