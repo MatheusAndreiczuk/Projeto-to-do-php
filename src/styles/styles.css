@@ -92,10 +92,12 @@ section::-webkit-scrollbar-thumb:hover {
     border-bottom: 1px solid var(--primary-200);
     outline: none;
     color: var(--accent-100);
+    caret-color: var(--primary-200);
 }
 
 form input::placeholder {
     color: var(--accent-100);
+    padding-left: 3px;
 }
 
 .create-task-form button {
