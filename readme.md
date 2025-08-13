@@ -38,4 +38,4 @@ Este é um projeto simples de lista de afazeres construído com **HTML**, **CSS*
 ---
 
 -Interface do projeto:
-![Interface](https://ibb.co/67Bgqcc9)
+<img src="https://i.postimg.cc/qMnFX26W/to-do-image.png" alt="Interface">
